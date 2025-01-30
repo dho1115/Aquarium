@@ -20,3 +20,8 @@ When you start an app with npm lite-server, you MUST:
 
 UPDATE!!!
 Added a media folder with images and videos which I added to .gitignore.
+
+JANUARY 30TH UPDATE!!!
+Positioned the coin logo OVER the video. See the following commit notes:
+44253e85a1dd11c6b019bb5dfb4bc45e00e424ce
+e82618e17e36106b0ebf7de9e0725e95ee140bbf
