@@ -14,9 +14,11 @@ video.main {
    height: 100vh;
    object-fit: cover;
    transform: translateZ(-5px) scale(1px);
+   position: absolute; /* Default position: static. */
 }
 
 .wrapper {
+   position: relative; /* Default postion: static. */
    perspective: 1px;
    width: 100%;
    height: 100vh;
