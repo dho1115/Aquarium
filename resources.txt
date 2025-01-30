@@ -1,0 +1,11 @@
+Wavy, Underwater Text:
+https://1stwebdesigner.com/underwater-css-text-effect/
+
+40 Stunning CSS Animations:
+https://prismic.io/blog/css-text-animations
+> Look at "The Aurora".
+
+https://freefrontend.com/css-water-effects/
+> Look at Kemi (water wave css).
+> Simple CSS waves.
+> Istiyak.
