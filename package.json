@@ -1,0 +1,25 @@
+{
+  "name": "aquarium",
+  "version": "1.0.0",
+  "description": "Inspired by my last trip to John G. Shedd aquarium.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dho1115/Aquarium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dho1115/Aquarium/issues"
+  },
+  "homepage": "https://github.com/dho1115/Aquarium#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "lite-server": "^2.6.1"
+  }
+}
