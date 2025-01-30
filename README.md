@@ -17,3 +17,6 @@ When you start an app with npm lite-server, you MUST:
    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    <script src="index.js"></script>
 5. After that, you can do npm start.
+
+UPDATE!!!
+Added a media folder with images and videos which I added to .gitignore.
