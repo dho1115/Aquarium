@@ -9,3 +9,9 @@ https://freefrontend.com/css-water-effects/
 > Look at Kemi (water wave css).
 > Simple CSS waves.
 > Istiyak.
+
+CSS Position: sticky:
+https://www.youtube.com/watch?v=NzjU1GmKosQ
+
+Bootstrap: sticky-top:
+https://getbootstrap.com/docs/4.0/utilities/position/
