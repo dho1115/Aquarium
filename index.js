@@ -1,1 +1,1 @@
-alert("Try placing the nav.headerLinks INSIDE div.logowrapper. Add another wrapper for logowrapper > img and set that to 100vh!!!")
+alert("Consider using an intersection observer.")
