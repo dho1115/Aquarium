@@ -1,1 +1,1 @@
-alert("Consider using an intersection observer.")
+// alert("Consider using an intersection observer.")
