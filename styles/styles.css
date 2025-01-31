@@ -36,13 +36,15 @@ img.behindscreencapture, img.screencapture {
 }
 
 img.behindscreencapture {
+   /* HOW TO PUT ONE IMAGE OVER ANOTHER. */
    z-index: 1;
    position: absolute;
 }
 
 img.screencapture {
+   /* HOW TO PUT ONE IMAGE OVER ANOTHER. */
    z-index: 3;
-   position: absolute;
+   position: absolute; 
 }
 
 .LogoWrapper {
