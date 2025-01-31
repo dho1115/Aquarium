@@ -15,3 +15,7 @@ https://www.youtube.com/watch?v=NzjU1GmKosQ
 
 Bootstrap: sticky-top:
 https://getbootstrap.com/docs/4.0/utilities/position/
+
+Javascript INTERSECTION OBSERVER:
+https://www.youtube.com/watch?v=2IbRtjez6ag
+
