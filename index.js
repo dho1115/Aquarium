@@ -1,7 +1,8 @@
-const transparentFishStockObserver = new IntersectionObserver(entries => {
-   console.log({ entries });
-}, {threshold: 0.75});
-const transparentFishStock = document.querySelector('.transparentFishStockWrapper');
+const screencaptureObserver = new IntersectionObserver(entries => {
+   entries.forEach(entry => entry.target.classList.toggle('setOpacity', entry.isIntersecting))
+}, { threshold: 0.95 });
 
-transparentFishStockObserver.observe(transparentFishStock);
+const screencaptureObserverSelector = document.querySelector('.screencapture');
+
+screencaptureObserver.observe(screencaptureObserverSelector);
 
