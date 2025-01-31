@@ -9,18 +9,27 @@
 </head>
 <body>
    <div class="wrapper">
-      <div class="logowrapper"> <!--Height: 100vh-->
-         <img src="./media/images/NoBackground.png" alt="Shedd Aquarium Logo" srcset="">
-      </div>
       <video autoplay muted loop class="main"> <!--Height: 100vh-->
          <source src="./media/videos/Shedd_Main.mp4" type="video/mp4">
          <strong>Sorry... your browser does not support the video tag.</strong>
       </video>
-      <nav class="headerLinks">
-         <a href="#"><span><strong>LINK 1</strong></span></a>
-         <a href="#"><span><strong>LINK 1</strong></span></a>
-         <a href="#"><span><strong>LINK 1</strong></span></a>
-      </nav>
+      <div class="headerwrapper"> <!--Height: 100vh-->
+         <div class="LogoWrapper">
+            <img src="./media/images/NoBackground.png" alt="Shedd Aquarium Logo" srcset="">
+         </div>         
+         <div class="transparent">
+            <header class="sticky-top">
+               <nav class="headerLinks">
+                  <a href="#"><span><strong>LINK 1</strong></span></a>
+                  <a href="#"><span><strong>LINK 1</strong></span></a>
+                  <a href="#"><span><strong>LINK 1</strong></span></a>
+               </nav>
+            </header>            
+            <div class="transparentFishStockWrapper sticky">
+               <img src="./media/images/transparentFishStock.png" alt="" class="src">
+            </div>
+         </div>
+      </div>
    </div>
    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    <script src="index.js"></script>
