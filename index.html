@@ -16,18 +16,22 @@
       <div class="headerwrapper"> <!--Height: 100vh-->
          <div class="LogoWrapper">
             <img src="./media/images/NoBackground.png" alt="Shedd Aquarium Logo" srcset="">       
-         </div>         
-         <div class="transparent">
-            <header class="sticky-top">
-               <nav class="headerLinks">
-                  <a href="#"><span><strong>LINK 1</strong></span></a>
-                  <a href="#"><span><strong>LINK 1</strong></span></a>
-                  <a href="#"><span><strong>LINK 1</strong></span></a>
-               </nav>
-            </header>            
+         </div>
+         <header class="sticky-top linkContainer">
+            <nav class="headerLinks">
+               <a href="#"><span><strong>LINK 1</strong></span></a>
+               <a href="#"><span><strong>LINK 1</strong></span></a>
+               <a href="#"><span><strong>LINK 1</strong></span></a>
+            </nav>
+         </header>         
+         <div class="transparent">            
             <div class="transparentFishStockWrapper">
-               <img src="./media/images/ScreenCaptureFishesMain.png" alt="Screen capture of the main screen" class="src screencapture"> <!--Static image of video.-->
-               <img src="./media/images/aqariumNoBackground.png" alt="fishes svg vector." class="src behindscreencapture"><!--Fish vector-->
+               <img src="./media/images/ScreenCaptureFishesMain.png" alt="Screen capture of the main screen" class="src screencapture"> <!--Static image of video. z-index = 3-->
+               <img src="./media/images/aqariumNoBackground.png" alt="fishes svg vector." class="src behindscreencapture"><!--Fish vector z-index = 1-->
+            </div>
+            <div class="headerWrapperBody">
+               <header><strong>TITLE CARD HERE</strong></header>
+               <p>Some Lorem Ipsum Stuff here</p>
             </div>
          </div>
       </div>
