@@ -59,6 +59,10 @@ img.screencapture {
    object-fit: cover;
 }
 
+.setOpacity {
+   opacity: 0;
+}
+
 .transparentFishStockWrapper {
    height: 100vh;
    background-color: transparent;
