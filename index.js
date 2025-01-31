@@ -1,1 +1,7 @@
-// alert("Consider using an intersection observer.")
+const transparentFishStockObserver = new IntersectionObserver(entries => {
+   console.log({ entries });
+}, {threshold: 0.75});
+const transparentFishStock = document.querySelector('.transparentFishStockWrapper');
+
+transparentFishStockObserver.observe(transparentFishStock);
+
