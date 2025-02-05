@@ -59,6 +59,13 @@
    z-index: -1
 }
 
+.grid_container > .columns > img {
+   animation: grid_container_images forwards;
+   animation-timeline: view();
+   border: 3.5px solid yellow;
+   border-radius: 50%;
+}
+
 h1.img-text {
    -webkit-text-stroke-color: #333;
    -webkit-text-stroke-width: 1.5px;
@@ -76,14 +83,6 @@ h1.img-text2 {
    animation: grid_container_images forwards;
    animation-timeline: view();   
 }
-
-.grid_container > .columns > img {
-   animation: grid_container_images forwards;
-   animation-timeline: view();
-   border: 3.5px solid yellow;
-   border-radius: 50%;
-}
-
 
 .headerWrapper { /* default z-index = 0. */
    height: 100vh;
