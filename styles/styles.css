@@ -12,48 +12,54 @@
 }
 
 .appBody {
-   height: 30vh;
-   border: 1.5px solid black;
-   background-color: rgb(173, 216, 230, 0.5);
+   height: 85vh;
+   /* border: 1.5px solid black; */
+   /* background-color: rgb(173, 216, 230); */
    position: sticky;
    top: 9%;
    z-index: 3;
 }
 
-.appBody > .grid_container {
-   display: grid;
-   grid-template-columns: auto auto auto;
-   justify-content: space-around;
-   height: 100%;
-   position: relative;
-}
-
 .appBody > .appBodybackground {
-   height: 100vh;
+   height: 100%;
    position: absolute;
    overflow-y: hidden;
 }
 
-.appBodyBackground > img {
+.appBody > .appBodyBackground > img {
    height: 100%;
    width: 100%;
    object-fit: cover;
 }
 
-.grid_container > div {
-   width: 33vw;
+.appBody > .grid_container {
+   display: grid;
+   height: 100%;
+   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+   position: relative;
+}
+
+.grid_container > .columns {
+   width: 33.3vw;
+   height: 75vh;
    padding: 0;
    margin: 0;
-   border: 1px solid black;
-   position: sticky;
-   top: 33%;
+   position: relative;
 }
 
-.grid_container > div > img {
+.grid_container > .columns > img {
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
+
+.grid_container > .columns > img {
+   animation: grid_container_images forwards;
+   animation-timeline: view();
+   border: 3.5px solid yellow
+}
+
 
 .headerWrapper { /* default z-index = 0. */
    height: 100vh;
@@ -76,7 +82,8 @@ img.screencapture {
    /* HOW TO PUT ONE IMAGE OVER ANOTHER. */
    z-index: 3;
    position: absolute;
-   transform: translateZ(-3px) scale(3px); 
+   transform: translateZ(-3px) scale(3px);
+   border: 7.5px solid black
 }
 
 .linkContainer {
@@ -154,6 +161,16 @@ video.transparentWrapperVideo {
    width: 100%;
    height: 100vh;
    overflow-x: hidden;
+}
+
+@keyframes grid_container_images {
+   from {
+      scale: 0.333;
+   }
+
+   to {
+      scale: 1;
+   }
 }
 
 @keyframes transitionOpacityToZero {
