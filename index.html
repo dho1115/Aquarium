@@ -9,33 +9,46 @@
 </head>
 <body>
    <div class="wrapper">
-      <video autoplay muted loop class="main"> <!--Fish video: Height: 100vh-->
-         <source src="./media/videos/Shedd_Main.mp4" type="video/mp4">
-         <strong>Sorry... your browser does not support the video tag.</strong>
-      </video>
-      <div class="headerwrapper"> <!--Height: 100vh-->
+      <div class="headerWrapper"> <!--Height: 100vh z-index: auto-->
          <div class="LogoWrapper">
-            <img src="./media/images/NoBackground.png" alt="Shedd Aquarium Logo" srcset="">       
+            <img src="./media/images/NoBackground.png" alt="Shedd Aquarium Logo" class="logo" srcset="">
+            <img src="./media/images/SheddAquariumOutside.jpg" class="logoBackgroundImage" alt="Shedd Aquarium Background" srcset="">       
+         </div>       
+      </div>
+
+      <nav class="sticky-top">
+         <a href="#"><span><strong>LINK 1</strong></span></a>
+         <a href="#"><span><strong>LINK 1</strong></span></a>
+         <a href="#"><span><strong>LINK 1</strong></span></a>
+      </nav>
+      
+      <div class="transparentAquariumWrapper"> <!--100vh-->
+         <video autoplay muted loop class="transparentWrapperVideo">
+            <source src="./media/videos/Shedd_Main.mp4" type="video/mp4">
+            <strong>Sorry... your browser does not support the video tag.</strong>
+         </video>
+         <img src="./media/images/ScreenCaptureFishesMain.png" alt="Screen capture of the video." class="behindscreencapture"> <!--Static image of video. z-index = 3-->
+         <img src="./media/images/aqariumNoBackground.png" alt="fishes svg vector." class="src screencapture"><!--Fish vector z-index = 1-->
+      </div>
+
+      <div class="appBody">
+         <div class="appBodybackground">
+            <img src="./media/images/marine_biodiversity.jpg" alt="" srcset="">
          </div>
-         <header class="sticky-top linkContainer">
-            <nav class="headerLinks">
-               <a href="#"><span><strong>LINK 1</strong></span></a>
-               <a href="#"><span><strong>LINK 1</strong></span></a>
-               <a href="#"><span><strong>LINK 1</strong></span></a>
-            </nav>
-         </header>         
-         <div class="transparent">            
-            <div class="transparentFishStockWrapper">
-               <img src="./media/images/ScreenCaptureFishesMain.png" alt="Screen capture of the main screen" class="src screencapture"> <!--Static image of video. z-index = 3-->
-               <img src="./media/images/aqariumNoBackground.png" alt="fishes svg vector." class="src behindscreencapture"><!--Fish vector z-index = 1-->
+         <div class="grid_container">
+            <div class="columns" id="col1">
+               <img src="./media/images/Copy of SheddSturgeon.jpg" alt="" srcset="">
             </div>
-            <div class="headerWrapperBody">
-               <header><strong>TITLE CARD HERE</strong></header>
-               <p>Some Lorem Ipsum Stuff here</p>
+            <div class="columns" id="col2">
+               <img src="./media/images/Aquarium_Inside_Entrance.jpg" alt="" srcset="">
+            </div>
+            <div class="columns" id="col3">
+               <img src="./media/images/" alt="" srcset="">
             </div>
          </div>
       </div>
    </div>
+   
    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    <script src="index.js"></script>
 </body>

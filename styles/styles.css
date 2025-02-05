@@ -4,29 +4,60 @@
    padding: 0 px;
 }
 
-header.linkContainer {
-   border-bottom: 1.5px solid black;
-   background-color: antiquewhite;
+.animateOpacityToZero {
+   animation-name: transitionOpacityToZero;
+   animation-duration: 3.75s;
+   animation-delay: 0.5s;
+   animation-fill-mode: forwards;
 }
 
-.headerLinks {
-   border-bottom: 1.5px solid black;
-   display: flex;
+.appBody {
+   height: 30vh;
+   border: 1.5px solid black;
+   background-color: rgb(173, 216, 230, 0.5);
+   position: sticky;
+   top: 9%;
+   z-index: 3;
+}
+
+.appBody > .grid_container {
+   display: grid;
+   grid-template-columns: auto auto auto;
    justify-content: space-around;
-   height: 5%;
-   width: 100%;
-   background-color: white;
-   align-items: center;
+   height: 100%;
+   position: relative;
 }
 
-.headerwrapper {
+.appBody > .appBodybackground {
+   height: 100vh;
+   position: absolute;
+   overflow-y: hidden;
+}
+
+.appBodyBackground > img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.grid_container > div {
+   width: 33vw;
+   padding: 0;
+   margin: 0;
+   border: 1px solid black;
+   position: sticky;
+   top: 33%;
+}
+
+.grid_container > div > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.headerWrapper { /* default z-index = 0. */
    height: 100vh;
    width: 100%;
-   position: absolute;
-   top: 0; /* setting my top. */
-   right: 0; /* setting my right. */
-   z-index: 1; /* z-index -1: logowrapper is positioned OVER the looping video */
-   overflow-y: scroll;
 }
 
 img.behindscreencapture, img.screencapture {
@@ -44,7 +75,15 @@ img.behindscreencapture {
 img.screencapture {
    /* HOW TO PUT ONE IMAGE OVER ANOTHER. */
    z-index: 3;
-   position: absolute; 
+   position: absolute;
+   transform: translateZ(-3px) scale(3px); 
+}
+
+.linkContainer {
+   border-bottom: 1.5px solid black;
+   background-color: antiquewhite;
+   position: relative;
+   height: 10vh;   
 }
 
 .LogoWrapper {
@@ -52,18 +91,70 @@ img.screencapture {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: rgb(0, 0, 225, 0.75);
 }
 
 .LogoWrapper > img {
+   max-height: 100%;
    object-fit: cover;
 }
 
-.animateOpacityToZero {
-   animation-name: transitionOpacityToZero;
-   animation-duration: 3.75s;
-   animation-delay: 0.5s;
-   animation-fill-mode: forwards;
+.LogoWrapper > .logoBackgroundImage {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   z-index: 0
+}
+
+.LogoWrapper > .logo {
+   object-fit: cover;
+   position: absolute;
+   z-index: 1;
+}
+
+nav {
+   border-bottom: 1.5px solid black;
+   display: flex;
+   justify-content: space-around;
+   height: 10vh;
+   width: 100%;
+   background-color: white;
+   align-items: center;
+   position: sticky;
+   z-index: 1030;
+}
+
+.stickyDiv {
+   position: sticky;
+   top: 33%;
+   background-color: antiquewhite;
+   height: 91%;
+}
+
+.transparentAquariumWrapper {
+   height: 100vh;
+   background-color: transparent;
+   perspective: 1px;
+   position: sticky;
+   top: 0;
+   z-index: 1 /* changing z-index from 0 to 1 ensures the page will not scroll behind the link header. */
+}
+
+video.transparentWrapperVideo {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   transform: translateZ(-95px) scale(95px);
+   z-index: -1;
+   position: absolute; /* Default position: static. */
+}
+
+.wrapper {
+   perspective: 1px;
+   width: 100%;
+   height: 100vh;
+   overflow-x: hidden; */
+   /* overflow-y: scroll;
 }
 
 @keyframes transitionOpacityToZero {
@@ -80,35 +171,4 @@ img.screencapture {
    100% {opacity: 0}
 }
 
-.transparentFishStockWrapper {
-   height: 100vh;
-   background-color: transparent;
-   position: relative;
-   z-index: 1 /* changing z-index from 0 to 1 ensures the page will not scroll behind the link header. */
-}
-
-.headerWrapperBody {
-   position: absolute;
-   right: 0;
-   left: 0;
-   background-color: antiquewhite;
-   min-height: 100vh;
-}
-
-video.main {
-   width: 100%;
-   height: 100vh;
-   object-fit: cover;
-   transform: translateZ(-5px) scale(1px);
-   z-index: -1;
-   position: absolute; /* Default position: static. */
-}
-
-.wrapper {
-   position: relative; /* Default postion: static. */
-   perspective: 1px;
-   width: 100%;
-   height: 100vh;
-   overflow-x: hidden;
-}
 
