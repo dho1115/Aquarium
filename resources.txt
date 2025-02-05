@@ -19,3 +19,17 @@ https://getbootstrap.com/docs/4.0/utilities/position/
 Javascript INTERSECTION OBSERVER:
 https://www.youtube.com/watch?v=2IbRtjez6ag
 
+CSS Animation:
+Scrolling:
+https://www.youtube.com/watch?v=0TnO1GzKWPc
+Intersection Observer:
+https://www.youtube.com/watch?v=0TnO1GzKWPc
+
+3D Animation:
+https://www.youtube.com/watch?v=lGokKxJ8D2c
+
+ThreeJS:
+https://www.youtube.com/watch?v=Q7AOvWpIVHU
+
+
+
