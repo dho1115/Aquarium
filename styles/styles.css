@@ -40,6 +40,12 @@
    position: relative;
 }
 
+.carouselPics {
+   object-fit: cover;
+   max-height: 100%;
+   max-width: 100%;
+}
+
 .grid_container > .columns {
    width: 33.3vw;
    height: 75vh;
