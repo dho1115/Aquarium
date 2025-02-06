@@ -84,7 +84,7 @@ h1.img-text {
 h1.img-text2 {
    -webkit-text-stroke-color: #333;
    -webkit-text-stroke-width: 1.5px;
-   font-size: 50px;
+   font-size: 73px;
    color: bisque;
    animation: grid_container_images forwards;
    animation-timeline: view();   
