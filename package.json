@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "Inspired by my last trip to John G. Shedd aquarium.",
   "main": "index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "start": "npm run lite",
-    "build": "parcel"
+    "start": "npm run lite"
   },
   "repository": {
     "type": "git",
