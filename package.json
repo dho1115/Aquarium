@@ -4,7 +4,6 @@
   "description": "Inspired by my last trip to John G. Shedd aquarium.",
   "main": "index.html",
   "scripts": {
-    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "start": "npm run lite",
