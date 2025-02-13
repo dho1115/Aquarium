@@ -46,7 +46,8 @@ What I need to do is:
     "start": "parcel",
     "build": "parcel build"
    Because you will now build with parcel.
-5. I believe what I did next was npm run build or npm build and then a dist folder was created. This dist folder should have the stuff from your src folder.
+4a. (Update): Inside the terminal: npx parcel src/index.html (see below). This is from https://parceljs.org/getting-started/webapp/.
+5. I believe what I did next was npm run build or npm build and then a dist folder was created. This dist folder should have the stuff from your src folder (see update on the bottom).
 6. Upload it to vercel
 
 IF IT STILL DOESN'T WORK...
@@ -61,6 +62,16 @@ https://vercel.com/davidhorphhotmailcoms-projects/aquarium-project/settings
 Scroll down till you see the output directory and then:
 7. On the right hand side, select "Override".
 8. Remove the 'dist' and then add a . (just add a period).
+
+UPDATE:
+
+I do not even think I needed to do npm run build.
+
+If I recall correctly, all I did was:
+
+npx parcel src/index.html
+
+Which I took from https://parceljs.org/getting-started/webapp/ and the dist was created.
 
 
 
