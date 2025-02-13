@@ -6,7 +6,7 @@
   "scripts": {
     "lite": "lite-server",
     "start": "parcel",
-    "build": "parcel build index.html"
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
