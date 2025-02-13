@@ -2,7 +2,7 @@
   "name": "aquarium",
   "version": "1.0.0",
   "description": "Inspired by my last trip to John G. Shedd aquarium.",
-  "maina": "index.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "parcel",
