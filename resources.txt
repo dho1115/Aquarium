@@ -33,7 +33,7 @@ https://www.youtube.com/watch?v=Q7AOvWpIVHU
 
 Build packages:
 npm i --save-dev html-minifier-terser postcss postcss-cli cssnano autoprefixer postcss-pxt
-orem @babel/core @babel/cli @babel/preset-env uglify.js
+orem @babel/core @babel/cli @babel/preset-env uglify-js
 
 
 
