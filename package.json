@@ -21,7 +21,6 @@
   "homepage": "https://github.com/dho1115/Aquarium#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "lite-server": "^2.6.1",
-    "parcel": "^2.13.3"
+    "lite-server": "^2.6.1"
   }
 }
