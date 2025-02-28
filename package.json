@@ -21,7 +21,8 @@
   "dependencies": {
     "aquarium": "file:",
     "bootstrap": "^5.3.3",
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
